@@ -15,31 +15,33 @@ body {
     background: 
     url("../assets/bg.png"),
     linear-gradient(to top, rgba(255, 228, 181, 1) 1.2rem,#ffffff 60%);
+    max-width: 1160px;
+    margin: 0 auto;
 }
 /* share styel */
 .display{
     display: flex;
-    max-width: 72.5rem;
+    
     
    
 }
-.magin{
-    margin: auto 9rem;
-}
+
 /* nav styel */
 .navbar{
-    width: 72.5rem;
-    gap: 11.6rem;
+    gap: 185px;
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 1.2rem 8.75rem;
+    margin: 18px 140px;
     
 
 }
+.menu{
+    display: none;
+}
 .nav-num2{
-    gap: 2rem;
-    margin-top: 1.2rem;
+    gap: 34px;
+    margin-top: 18px;
     font-size: 1.2rem;
     
 }
@@ -66,7 +68,7 @@ body {
     font-size: 1.2rem;
     font-weight: 600px;
     color: white;
-    padding: 0.6rem;
+    padding: 9.6px;
     border-radius: 12px;
     background-color: orange;
     border: none;
@@ -76,8 +78,7 @@ body {
 .head-discription{
     justify-content: center;
     gap: 50px;
-    max-width: 72.3rem;
-    margin-left: 9rem;
+    margin-left: 144px;
     
 }
 #Empowering{
@@ -98,9 +99,8 @@ body {
     font-weight: bold;
 }
 .head-para{
-    margin-top: 8.75rem;
-    max-width: 40rem;
-    gap: 1.4rem;
+    margin-top: 140px ; 
+    gap: 24px;
 }
 .head-data{
     font-size: 1.3rem;
@@ -108,11 +108,11 @@ body {
 }
 .btn-2{
     border: none;
-    border-radius: 0.8rem;
+    border-radius: 12px;
     color: white;
     background-color: black;
-    width: 12.2rem;
-    height: 3.2rem;
+    width: 192px;
+    height: 50px;
 }
 .header{
     gap: 0px;
@@ -180,10 +180,6 @@ border: none;
 .main-cart{
     
     gap: 28px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin:80px 140px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -207,13 +203,10 @@ border: none;
     cursor: pointer;
 }
 .arrow-btn{
-  
-    
-    align-items: center;
+    display: flex;
+    align-content: center;
     justify-content: center;
     gap: 10px;
-    
-    
 }
 .arrow-btn :hover{
     background-color: darkgray;
@@ -342,6 +335,72 @@ footer p {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+@media screen and (max-width: 576px) {
+    header {
+        border: 1px solid orange;
+    }
+
+    .nav-num2,
+    .button-primary {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        align-items: right;
+    }
+    #school {
+        display: none;
+    }
+
+    .head-discription {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head-para {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin: 0 auto;
+        padding: 0 18px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .story-card-1 {
+        display: none;
+    }
+
+    .image-cart1{
+        display: none;
+      }
+      .hidden-cart{
+        display: block;
+      }
+      .cart{
+        transform: translate(8px,-20px);
+      }
+      
+      .primary-button{
+        width: 120px;
+        height: 30px;
+        font-weight: 600;
+        font-size: 0.8rem;
+        color: white;
+        border-radius: 10px;
+      }
+  
+    .footer-container{
+        flex-direction: column;
+    }
 }
 
 
